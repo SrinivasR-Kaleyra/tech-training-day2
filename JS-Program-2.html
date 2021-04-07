@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS FRONT END</title>
+    <script>
+        function demo()
+        {
+            alert("Inside the Demo Function")
+            
+            const a = 5;
+            let b = 25;
+            var c = 20;
+
+            if(a+c == b)
+            {
+                document.getElementById("output").innerHTML = "Equal";
+            }
+            else
+            {
+                document.getElementById("output").innerHTML = "Not Equal";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <p id="output"> </p>
+    <input type="button" value="CLICK HERE" onclick="demo()" >
+</body>
+</html>

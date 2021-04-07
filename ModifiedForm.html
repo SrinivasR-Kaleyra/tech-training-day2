@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>USER FORM</h2>
+
+<form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)" method="POST">
+
+<fieldset>
+    <legend>Basic Details</legend>
+    <label>First Name: <input type="text" id="fname" name="fname" value=""><br>
+    </label><br>
+    <label>Last name: <input type="text" id="lname" name="lname" value=""><br>
+    </label><br>
+
+    <strong>
+        <label>Gender:</label>
+    </strong>
+
+    <br>
+
+    <label><input type="radio" id="male" name="gender" value="male">Male</label><br>
+    <label><input type="radio" id="female" name="gender" value="female">Female</label><br>
+    <label><input type="radio" id="other" name="gender" value="other">Other</label>
+    <br>
+    <br>
+</fieldset>
+
+<fieldset>
+    <legend>Educational Details</legend>
+    <br>
+
+    <strong> Select Your Education</strong><br>
+
+    <label><input type="checkbox" id="Secondary" name="Secondary" value="10th">
+        Upto 10th 
+    </label><br>
+
+    <label><input type="checkbox" id="SrSecondary" name="SrSecondary" value="12th">
+        Upto 12th
+    </label><br>
+
+    <label><input type="checkbox" id="grad" name="grad" value="Graduation">
+        Graduation
+    </label><br>
+
+    <br><br>
+
+    <label>Choose a Course:
+    <select id="course" name="course">
+    <option value="Arts">Arts</option>
+    <option value="Science">Science</option>
+    <option value="Commerce">Commerce</option>
+    <option value="IT">IT</option>
+    </select>
+    </label>
+</fieldset>
+
+<br>
+<br>
+
+<label>
+    About You: <br>
+    <textarea name="about" rows="10" cols="70"> </textarea>
+</label>
+
+<br>
+<br>
+
+<fieldset>
+    <legend>Personal Information:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+</fieldset>
+
+<br>
+<br>
+
+<label>Course For IT:</label>
+
+<input list="languages">
+
+<datalist id="languages">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="Javascript">
+    <option value="React">
+    <option value="Node">
+</datalist>
+
+<br>
+<br>
+
+<label for="Age">Age</label>
+
+<br>
+<br>
+
+0<input type="range" id="a" name="a" value="10" min="0" max="100">100 + 
+<input type="number" id="b" name="b" value="8" min="0" max="100"> = <output name="x" for="a b"></output>
+
+<br>
+<br>
+
+<label>Choose a city:
+    <select  name="city" id="city">
+    <optgroup label="Rajasthan">
+        <option value="jodhpur">Jodhpur</option>
+        <option value="jaipur">Jaipur</option>
+    </optgroup>
+    <optgroup label="Karnataka">
+        <option value="bangalore">Bangalore</option>
+        <option value="coorg">Coorg</option>
+    </optgroup>
+    </select>
+</label>
+
+<br><br>
+
+<input type="submit" value="Submit User Data">
+
+</form>
+</body>
+</html>
